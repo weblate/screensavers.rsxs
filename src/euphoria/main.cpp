@@ -667,6 +667,9 @@ void CScreensaverEuphoria::Render()
   if (!m_startOK)
     return;
 
+  glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+  glClear(GL_COLOR_BUFFER_BIT);
+
   /*
    * Following Extra work done here in render to prevent problems with controls
    * from Kodi and during window moving.

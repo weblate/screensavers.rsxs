@@ -64,6 +64,8 @@ void CScreensaverPlasma::Stop()
 
 void CScreensaverPlasma::Render()
 {
+  glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+  glClear(GL_COLOR_BUFFER_BIT);
   glDisable(GL_BLEND);
 
   int i, j;

@@ -84,6 +84,7 @@ void CScreensaverSpiroGraphX::Render()
   if (m_lastSettingsChange == -1)
     m_lastSettingsChange = currentTime;
 
+  glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   GetAll(m_content);
   if (m_contentOldActive)

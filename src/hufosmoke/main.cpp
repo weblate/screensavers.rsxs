@@ -168,6 +168,9 @@ void CScreensaverHufoSmoke::Render()
   float frameTime = static_cast<float>(currentTime - m_lastTime);
   m_lastTime = currentTime;
 
+  glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+  glClear(GL_COLOR_BUFFER_BIT);
+
   /*
    * Following Extra work done here in render to prevent problems with controls
    * from Kodi and during window moving.

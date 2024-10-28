@@ -355,6 +355,9 @@ void CScreensaverSolarWinds::Render()
   if (!m_startOK)
     return;
 
+  glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+  glClear(GL_COLOR_BUFFER_BIT);
+
   glBindBuffer(GL_ARRAY_BUFFER, m_vertexVBO[0]);
   glVertexAttribPointer(m_hPos, 3, GL_FLOAT, 0, sizeof(sLight), BUFFER_OFFSET(offsetof(sLight, vertex)));
   glEnableVertexAttribArray(m_hPos);

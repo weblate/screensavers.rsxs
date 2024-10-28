@@ -188,6 +188,9 @@ void CScreensaverBiof::Render()
 {
   if (!m_startOK)
     return;
+  
+  glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+  glClear(GL_COLOR_BUFFER_BIT);
 
   if ((m_geometry == SPHERES) || (m_geometry == BIGSPHERES))
     glEnable(GL_CULL_FACE);
